@@ -1,0 +1,312 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #eaf7f9; /* Nền xanh nước biển nhạt */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    background: linear-gradient(135deg, #0b6623, #79c7d9); /* Gradient xanh lá và xanh nước biển nhạt */
+    color: white;
+    padding: 80px 20px;
+    border-bottom: 6px solid #0a5c20;
+}
+
+.main-header h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main-header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.main-header .banner {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    background: #0b6623;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #79c7d9; /* Hiệu ứng xanh nước biển khi hover */
+}
+
+/* Team Section */
+.team {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    color: #0b6623;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.team p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team .members {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.team .members li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #eaf7f9; /* Xanh nước biển nhạt */
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team .members li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #d9f2f5; /* Xanh sáng hơn khi hover */
+}
+
+
+
+.activities 
+{ 
+    padding: 50px 0;
+     background-color: #f4f7fa;
+     } 
+.activities h2 
+{ font-size: 2em;
+     text-align: center;
+      color: 0b6623; 
+     margin-bottom: 40px; } 
+.timeline ul 
+{ list-style-type: none; 
+    padding: 0; 
+    display: grid; 
+    grid-template-columns: repeat(3, 33%);
+    gap: 30px; } 
+.timeline li 
+{ 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    transition: transform 0.3s ease; 
+    border-left: 10px solid #79c7d9; /* Viền xanh nước biển nhạt */} 
+.timeline li:hover
+ { transform: translateY(-10px); } 
+.timeline img 
+
+
+{ max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px; } 
+@media (max-width: 768px) 
+{ .timeline ul { grid-template-columns: 1fr; } }
+
+/* Gallery Section */
+.gallery {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #0b6623;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.photo-album h2 {
+    color: #1a5276;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.gallery .posters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery .posters img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .posters img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Đảm bảo gallery có thể thu nhỏ trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .photo-gallery .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 ảnh trong mỗi hàng */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery .gallery {
+        grid-template-columns: 1fr; /* 1 ảnh mỗi hàng */
+    }
+}
+
+.videos {
+    background: #e6f7ff; /* Màu nền xanh nước biển nhạt */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2.5em;
+    color: #2f8f47; /* Xanh lá đậm */
+    margin-bottom: 20px;
+}
+
+.video-section {
+    margin-bottom: 40px;
+}
+
+.video-section h3 {
+    font-size: 1.8em;
+    color: #1a5276; /* Xanh dương đậm */
+    margin-bottom: 10px;
+}
+.video-section h2 {
+    font-size: 1.8em;
+    color: #1a5276; /* Xanh dương đậm */
+    margin-bottom: 10px;
+}
+
+.video-section video {
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #2f8f47; /* Đường viền xanh lá */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.video-section p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 20px;
+}
+
+
+/* Phần Lời cảm ơn */
+.thankyou {
+    background: #e6f7ff; /* Màu xanh da trời nhạt */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.thankyou h2 {
+    font-size: 2.5em;
+    color: #2f8f47; /* Xanh lá đậm */
+    margin-bottom: 20px;
+}
+
+.thankyou p {
+    font-size: 1.2em;
+    color: #333; /* Màu chữ đậm */
+    line-height: 1.8;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #79c7d9, #0b6623);  
+    color: white; /* Chữ trắng */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.10em;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer p strong {
+    color: #1a5276; /* Xanh dương đậm */
+}
+
+
+
